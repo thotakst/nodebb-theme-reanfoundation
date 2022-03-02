@@ -1,0 +1,43 @@
+{
+  "name": "nodebb-theme-reanfoundation",
+  "version": "1.0.0",
+  "nbbpm": {
+    "compatibility": "^1.18.0"
+  },
+  "description": "Persona theme for NodeBB",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-theme-reanfoundation"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "forum",
+    "bootstrap",
+    "responsive"
+  ],
+  "contributors": [
+    {
+      "name": "Sushant Thotakura",
+      "email": "test@test.com",
+      "url": "https://github.com/psychobunny"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-theme-persona/issues"
+  },
+  "dependencies": {
+    "pulling": "^2.0.0",
+    "striptags": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-nodebb": "^0.0.2",
+    "eslint-plugin-import": "^2.24.2"
+  }
+}
