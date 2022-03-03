@@ -68,7 +68,7 @@
                   	</div>
                   	<!-- plane image -->
                   	<div class="plane">
-                      	<img src="{config.relative_path}/plugins/nodebb-theme-persona/images/plane.png" alt="logo">
+                      	<img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/plane.png" alt="logo">
                   	</div>
               	</div>
   
