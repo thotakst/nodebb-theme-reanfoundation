@@ -1,0 +1,166 @@
+
+.mcontainer{
+	background: linear-gradient(to bottom, #fff 50%, #7165e4 50%);
+	display:flex;
+}
+
+.mailingbox{
+	background-color: #fff;
+	box-shadow: 0 0 7px #ccc;
+	border-radius: 5px;
+    display:flex;
+    margin: 2% 5%;
+	padding:10px 0px;
+    -moz-box-shadow: 0 0 7px #ccc;
+    -webkit-box-shadow: 0 0 7px #ccc;
+    
+	/* border: 2px solid black; */
+	/* height: 100px; */
+	
+    /* flex-direction: column; */
+}
+
+.mailingbox1{
+	flex:1;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.mbox11{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	/* align-content: center; */
+
+}
+
+.mbheading{
+	display:flex;
+	margin-left: 4%;
+	/* border: 2px solid black; */
+	/* text-align: center; */
+	/* flex: 1; */
+	/* padding:5px 100px 0px 30px;	 */
+}
+
+.plane{
+	display:flex;
+	justify-content: center;
+	/* border: 2px solid black; */
+	/* flex:1; */
+	/* text-align: center;	 */
+}
+
+.plane img{
+	width: 30%; 
+	opacity: 0.5; 
+	border-radius:80%; 
+	min-width: 60px;
+}
+
+.plane img:hover{
+	opacity: 1;
+}
+
+.mbheading h4{
+	font-size: 40px;
+	font-weight: 600;
+	/* padding: 5px 0px 5px 10px; */
+}
+
+.mbparagraph p{
+	/* border: 1px solid black; */
+	font-size:16px;
+	font-weight: 500;
+	margin: 4%;
+	/* padding: 20px 50px 20px 30px; */
+}
+
+
+.mailingbox2{
+	background-color: #f8f8ff;
+	flex:1;
+	display: flex;
+	/* border: 1px solid black; */
+	/* margin:auto; */
+	/* padding-bottom: 10px; */
+}
+
+.mailingbox2 form{
+	display:flex;
+	flex:1;
+	flex-direction: column;
+	align-items: center;	
+}
+
+.input-feild{
+	/* background-color: #7165e4; */
+	font-size: 16px;
+	width: 80%;
+	height: 40px;
+	margin-top:30px;
+	padding-left:10px;
+	padding-right: 10px;
+	border: none;
+     /* border: 1px solid #7165e4;  */
+	border-radius: 7px;
+	outline: none;
+	box-shadow: 0 0 7px #ccc;
+	-moz-box-shadow: 0 0 7px #ccc;
+    -webkit-box-shadow: 0 0 7px #ccc;
+}
+
+.mbtn{
+    align-items: center;
+    background-color: #7165e4;
+    border:none;
+    border-radius: 3px;
+    color: #fff;
+	cursor: pointer;
+    display:flex;
+    font-size: 16px ; 
+    font-weight: 500;
+    justify-content: center;
+    margin: 5% 0% 3% 0%;
+	padding: 10px;
+    width:60%;  
+    
+}
+
+.mbtn:hover{
+    background-color: #fff;
+    border: solid 1px #7165e4;
+    color:#7165e4;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+
+ .mailingbox{
+    flex-direction: column;
+ }
+
+ .plane{
+	 display: none;
+ }
+ 
+ .plane img{
+     width: 30%;
+     min-width:10px;
+ }
+ 
+ .mbox11{
+	padding: 5px;
+ }
+ .mbheading{
+     margin-left: 0%;
+	 text-align: center;
+ }
+ 
+ .mbparagraph p{
+	 text-align: center;
+	 margin: 1%;
+     padding-top:2px;
+ }
+
+}
