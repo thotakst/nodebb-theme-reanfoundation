@@ -41,7 +41,7 @@
         <header>
         <div class="lowerh">
             <div class="logo">
-                <img src ="{config.relative_path}/plugins/nodebb-theme-persona/images/Rlogo.png" alt="Logo">
+                <img src ="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/Rlogo.png" alt="Logo">
             </div>
             <nav>
              <input type="checkbox" id="check">
