@@ -21,7 +21,7 @@
 </div>
 <!--right part-->
 <div class="s1right">
-	<img src="{config.relative_path}/plugins/nodebb-theme-persona/images/img05.jpg" alt="image5" class="img05">
+	<img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/img05.jpg" alt="image5" class="img05">
 </div>
 </div>
 <div class="s2head">
