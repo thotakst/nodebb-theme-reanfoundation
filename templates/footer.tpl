@@ -21,7 +21,7 @@
         <div class = mbox1>
             <!-- logo -->
             <div class="box1">
-                <img src="{config.relative_path}/plugins/nodebb-theme-persona/images/Rlogo.png" alt="logo">
+                <img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/Rlogo.png" alt="logo">
             </div>
             
             <!-- paragraph -->
@@ -79,8 +79,8 @@
             <div class="box6" >
                 <h4>Download App</h4>
                 <div>
-                <a href ="#"><img src="{config.relative_path}/plugins/nodebb-theme-persona/images/apple.png" alt="logo" style="width: 50px;  margin-right: 10px; background-color: #fff; border-radius: 3px;"></a>
-                <a href ="#"><img src="{config.relative_path}/plugins/nodebb-theme-persona/images/pstore.webp" alt="logo" style="width: 50px; background-color: #fff; border-radius: 3px; "></a>
+                <a href ="#"><img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/apple.png" alt="logo" style="width: 50px;  margin-right: 10px; background-color: #fff; border-radius: 3px;"></a>
+                <a href ="#"><img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/pstore.webp" alt="logo" style="width: 50px; background-color: #fff; border-radius: 3px; "></a>
                 </div>
             </div>
             
@@ -89,8 +89,8 @@
                 <h4>Chat with REAN HealthGuru</h4>
                         
                         <div>
-                            <a href ="#"><img src="{config.relative_path}/plugins/nodebb-theme-persona/images/WhatsApp.svg" alt="logo" style="width: 35px; margin-right: 5px; background-color: #fff; border-radius: 3px;"></a>
-                            <a href ="#"><img src="{config.relative_path}/plugins/nodebb-theme-persona/images/telegram.png" alt="logo" style="width: 35px; background-color: #fff; border-radius: 3px;"></a>
+                            <a href ="#"><img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/WhatsApp.svg" alt="logo" style="width: 35px; margin-right: 5px; background-color: #fff; border-radius: 3px;"></a>
+                            <a href ="#"><img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/telegram.png" alt="logo" style="width: 35px; background-color: #fff; border-radius: 3px;"></a>
                         </div>
             </div>
         </div>
