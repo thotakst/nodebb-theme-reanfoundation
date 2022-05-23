@@ -1,16 +1,21 @@
 {
 	"id": "nodebb-theme-reanfoundation",
+	"library": "./library.js",
 	"hooks": [
 		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
 		{ "hook": "filter:config.get", "method": "getThemeConfig" },
 		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "static:app.load", "method": "addColumnOne"},
+		{ "hook": "static:app.load", "method": "checkHomePage"},
+		{ "hook": "static:app.load", "method": "addColumnTwo"},
 		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
 		{ "hook": "filter:topic.build", "method": "addUserToTopic" }
 	],
 	"scripts": [
 		"public/persona.js",
 		"public/modules/autohidingnavbar.js",
-		"public/modules/quickreply.js"
+		"public/modules/quickreply.js",
+		"./helpers.js"
 	],
 	"modules": {
 		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"

@@ -123,7 +123,11 @@ nav ul li a:hover{
 @media only screen and (max-width:768px){
 
    .checkbtn i{
-       display: block;
+       display: block !important;
+   }
+
+   .checkbtn {
+       display: block !important;
    }
 
    .logo{
@@ -133,19 +137,20 @@ nav ul li a:hover{
    nav ul{
        align-items: center;
        background: #7165e4;
-       border-radius: 50%;
+       border-radius: 3%;
        display:flex;
        flex-direction: column;
        justify-content: space-evenly;
        height: 60vh;
        left: 150%;
-       margin-top:8%;
+       margin-top:5%;
        padding-top:20px;
        position: fixed;
        text-align: center;
        transition: all .5s;
-       top: 150px;
-       width: 100%;  
+       top: 10%;
+       width: 100%;
+       z-index: 1;  
     
    }
 

@@ -15,22 +15,64 @@
 
 		<!-- IMPORT partials/footer/js.tpl -->
 
+        <script>
+            var config = JSON.parse('{{configJSON}}');
+            var app = {
+                user: JSON.parse('{{userJSON}}')
+            };
+            console.log("Here in the footer");
+        </script>
+        <!-- IF categories/ -->
+        <div class="mcontainer">
+            <div class ="mailingbox" >
+                <!-- left half -->
+                <div class="mailingbox1" >
+                
+                <div class="mbox11">
+                    <!-- mbheading -->
+                    <div class="mbheading">
+                        <h4>JOIN OUR MAILING LIST</h4>
+                    </div>
+                    <!-- plane image -->
+                    <div class="plane">
+                        <img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/plane.png" alt="logo">
+                    </div>
+                </div>
+    
+                <!-- mbparagraph -->
+                <div class="mbparagraph">
+                    <p> SignUp to get health and wellness tips, updates about new healthy platform features and invites to ur upcoming webinars and expert round 
+                    </p>
+                    </div>
+                </div>
+    
+                <!-- right half -->
+                <div class="mailingbox2" >
+                    
+                        <form>
+                            <input type="text" class="input-feild" placeholder="Name">
+                            <input type="text" class="input-feild" placeholder="Email">
+                            <input type="text" class="input-feild" placeholder="Phone">
+                            <input type="text" class="input-feild" placeholder="Zip Code">
+                            <button type="button" class ="mbtn" > SUBMIT</button>
+                        </form>
+                    
+                </div>
+            </div>
+  
+        </div>
+        <!-- ENDIF categories/ -->
+
 		<div class="fcontainer">
      
-        <!-- logo, paragraph and follow us -->
         <div class = mbox1>
-            <!-- logo -->
             <div class="box1">
                 <img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/Rlogo.png" alt="logo">
             </div>
-            
-            <!-- paragraph -->
             <div class="box2">
                <p> Headquartered in Virginia, USA, REAN Foundation focuses on improving the quality of life by empowering people with easy-to-use healthcare platforms that allow you to take control of your health from the comfort of your homes.
                </p>
             </div>
-    
-            <!-- follow us -->
             <div class="box3">
                 <h4>Follow Us</h4>
                 <div class="social-links">
@@ -42,8 +84,7 @@
                 </div>
             </div>
         </div>
-    
-         <!-- quick links -->
+
          <div class="mbox2">
             <div class = "box4">
                    <h4>Quick Links</h4>
@@ -60,7 +101,6 @@
              </div>
          </div>
     
-         <!-- get in touch -->
          <div class="mbox3">
             <div class = "box5">
                    <h4>Get in Touch</h4>
@@ -73,9 +113,7 @@
             </div>
          </div>
     
-         <!-- download app and chat with rean -->
          <div class="mbox4">
-            <!-- download app -->
             <div class="box6" >
                 <h4>Download App</h4>
                 <div>
@@ -84,7 +122,6 @@
                 </div>
             </div>
             
-            <!-- Chat with rean -->
             <div class="box7" >
                 <h4>Chat with REAN HealthGuru</h4>
                         
@@ -97,7 +134,6 @@
     
        </div>
        
-       <!-- last part -->
        <div class="lcontainer">
            <div class="litem1">
             Copyright C REAN Foundation

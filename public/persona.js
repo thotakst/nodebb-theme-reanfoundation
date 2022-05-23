@@ -8,6 +8,8 @@ $(document).ready(function () {
 	setupQuickReply();
 	configureNavbarHiding();
 	fixHeaderPadding();
+	// addColumnOne();
+	// addColumnTwo();
 
 	$(window).on('resize', utils.debounce(configureNavbarHiding, 200));
 	$(window).on('resize', fixHeaderPadding);
@@ -19,7 +21,25 @@ $(document).ready(function () {
 	$(window).on('action:app.load', function () {
 		setupTaskbar();
 		setupMobileMenu();
+		// addColumnOne();
+		// addColumnTwo();
 	});
+
+	// function addColumnOne() {
+	// 	require(['benchpress'], (benchpress) => {
+	// 		benchpress.registerHelper('addOne', (num) => {
+	// 		  return num % 2 !== 0;
+	// 		}
+	// 		)});
+	// }
+
+	// function addColumnTwo() {
+	// 	require(['benchpress'], (benchpress) => {
+	// 		benchpress.registerHelper('addTwo', (num) => {
+	// 			return num % 2 === 0;
+	// 		})
+	// 	});
+	// }
 
 	function fixHeaderPadding() {
 		var env = utils.findBootstrapEnvironment();

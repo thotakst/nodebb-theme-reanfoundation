@@ -1,10 +1,10 @@
+
+
 /* Section1 CSS */
 
-.s1container{
+.s1container{ 
     align-items: center;
 	display:flex;
-	/* margin: 30px 60px 30px 30px; */
-	/* justify-content: space-evenly; */
 	
 }
 
@@ -13,8 +13,6 @@
   display:flex;
   flex:1;
   flex-direction: column;
- 
-  /* border: 2px solid black; */
 }
 
 .s1heading, .s1para{
@@ -26,8 +24,7 @@
 
 .s1heading h1{
     font-size: 50px;
-    font-weight: 600;
-    
+    font-weight: 600; 
  }
 
 .s1para{
@@ -49,8 +46,7 @@
     font-weight: 500;
     justify-content: center;
     padding: 5px;
-    width:130px;  
-    
+    width:130px;   
 }
 
 .s1btn:hover{
@@ -63,11 +59,6 @@
    display:flex;
    flex:1;
    justify-content: center;
-   /* align-items: center; */
-   /* border: 2px solid black; */
-   /* display:table-cell; */
-   /* vertical-align:center;  */
-   /* text-align:center; */
 }
 
 .s1right img{
@@ -80,9 +71,6 @@
 .s2head{
     display:flex;
     margin: 2% 7%;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
 }
 
 .s2head h1{
@@ -90,17 +78,26 @@
     font-weight: 600;
 }
 
-
 .section2{
     display:flex;
-    margin: 2% 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0% 0%;
+    flex:2;
 }
 
-.sec1, .sec2, .sec3{
+.sec1{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0% 2%;
+    width: 70%
+}
+
+.sec2, .sec3{
     flex:1;
     flex-direction: column;
-    display:flex;
-    
+    display:flex;   
 }
 
 .card{
@@ -113,13 +110,11 @@
     padding: 2px 3%;
     margin: 10px 0px 5px 0px;
     min-width: 200px;
-    width: 85%;
+    width: 45%;
     -moz-box-shadow:    3px 3px 7px 3px #ccc;
     -webkit-box-shadow: 3px 3px 7px 3px #ccc;
      box-shadow:         3px 3px 7px 3px #ccc;
      transition: all 0.5s ease;
-
-     /* text-align: left; */
 }
 
 .card:hover{
@@ -142,8 +137,6 @@
 }
 
 .card img{
-   /* padding-top:1px; */
-   /* width: calc(10px + 3vw);  */
    border-radius: 50%;
    width:50px;
    height:50px;
@@ -151,18 +144,20 @@
 }
 
 .cardtext p{
-    /* text-align:left; */
     font-size: 16px; 
     font-weight: 500;
 }
 
-
-
-
 /* aside section */
+
+.s2body{
+    display : flex;
+    padding: 8px 10px;
+}
 
 .sec3{
     border:2px solid#7165e4;
+    flex:1;
 }
    
 .sec3heading{
@@ -187,12 +182,9 @@
     min-width: 200px;
     width: 87%;
     transition: all 0.5s ease;
-    /* border: 1px solid #7165e4; */
-    /* text-align: left; */
 }
 
 .acard:hover{
-    /* border-left: none; */
     border: 1px solid #7165e4;
 }
 
@@ -204,7 +196,6 @@
 }
 
 .acardicon img{
-   /* padding-top:1px; */
    border-radius: 1%;
    border:1px solid#7165e4;
    width: 60px;
@@ -215,6 +206,7 @@
     flex:4;
     
 }
+
 .acardtext p{
     font-size: 16px; 
     font-weight: 500;
@@ -224,6 +216,10 @@
 /* Media queries */
 
 @media(max-width: 767px){
+
+    .s1container{
+      padding-top: 0px;
+    }
     
     .s1para{
         margin:2% 0%;
@@ -239,14 +235,24 @@
         margin: 2% 0%;
     }
 
+    .s2body{
+        flex-direction: column-reverse;
+    }
+
     .section2{
         flex-direction: column-reverse;
         /* align-items: center; */
+
+        margin: 0%;
+    }
+
+    .sec1{
+        width: 100%;
     }
 
     .card{
         margin-right: 0px;
-        width:92%; 
+        width: 100%; 
     }
 
     .s1btn button{
