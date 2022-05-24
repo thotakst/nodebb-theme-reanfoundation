@@ -47,8 +47,9 @@
 	{{{end}}}
 </div>
 
-     <div class="mcontainer">
-        <div class ="mailingbox" >
+     <div class="mcontainer withfooter">
+        <div class='blenderbar'></div>
+        <div class="mailingbox" >
             <!-- left half -->
             <div class="mailingbox1" >
               
