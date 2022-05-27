@@ -84,6 +84,18 @@ nav ul li a:hover{
     transition: .9% ease-in-out;
 }
 
+nav .header-menu-overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0;
+    cursor: pointer;
+}
+
 .nbtn {
     background-color: #7165e4;
     border-radius: 4px;
@@ -150,8 +162,7 @@ nav ul li a:hover{
        transition: all .5s;
        top: 10%;
        width: 100%;
-       z-index: 1;  
-    
+       z-index: 10; 
    }
 
    nav ul li{
@@ -173,6 +184,10 @@ nav ul li a:hover{
     color: #3a3a3a;
     transition: .20% ease-in-out;
   }
+
+    nav .header-menu-overlay {
+        display: none;
+    }
 
   .nbtn{
     border-radius: 3px;
@@ -196,9 +211,13 @@ nav ul li a:hover{
   #check:checked ~ .checkbtn i:before{
       content: "\f00d";
   }
+
    #check:checked ~ ul {
      left:0;
    }
- 
+
+   #check:checked ~ div.header-menu-overlay {
+    display: block;
+   }
 }
 
