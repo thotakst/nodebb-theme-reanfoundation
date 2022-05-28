@@ -18,6 +18,11 @@
 			document.body.style.position = '';
 			document.body.style.top = '';
 		}
+
+		window.openHeaderModal = function() {
+			document.body.style.position = 'fixed';
+			document.body.style.top = `-${window.scrollY}px`;
+		}
 	</script>
 
 	{{{if useCustomHTML}}}
@@ -52,7 +57,7 @@
             <nav>
              <input type="checkbox" id="check">
              <label for= "check" class="checkbtn">
-                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                <i onclick="window.openHeaderModal()" class="fa fa-bars fa-2x" aria-hidden="true"></i>
              </label>
 				<div onclick="window.closeHeaderModal()" class='header-menu-overlay'></div>
              <!-- <div class ="navclass"> -->

@@ -118,6 +118,10 @@ nav .header-menu-overlay {
     color:#7165e4;
 }
 
+label.checkbtn {
+    z-index: 9;
+}
+
 .checkbtn i{
     color: #7165e4;
     cursor: pointer;
@@ -125,6 +129,7 @@ nav .header-menu-overlay {
     float: right;
     line-height: 100px;
     margin-right: 40px;  
+    z-index: 9;
 }
 
 #check {
@@ -162,7 +167,10 @@ nav .header-menu-overlay {
        transition: all .5s;
        top: 10%;
        width: 100%;
-       z-index: 10; 
+       z-index: 10;  
+       -webkit-box-shadow: 0px 0px 4px 0px rgba(87,84,135,1);
+       -moz-box-shadow: 0px 0px 4px 0px rgba(87,84,135,1);
+       box-shadow: 0px 0px 4px 0px rgba(87,84,135,1);
    }
 
    nav ul li{
