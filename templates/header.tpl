@@ -12,6 +12,17 @@
 			user: JSON.parse('{{userJSON}}')
 		};
 		console.log(config);
+
+		window.closeHeaderModal = function() {
+			$('body > header > div > nav #check').prop('checked', false);
+			document.body.style.position = '';
+			document.body.style.top = '';
+		}
+
+		window.openHeaderModal = function() {
+			document.body.style.position = 'fixed';
+			document.body.style.top = `-${window.scrollY}px`;
+		}
 	</script>
 
 	{{{if useCustomHTML}}}
@@ -46,14 +57,15 @@
             <nav>
              <input type="checkbox" id="check">
              <label for= "check" class="checkbtn">
-                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                <i onclick="window.openHeaderModal()" class="fa fa-bars fa-2x" aria-hidden="true"></i>
              </label>
+				<div onclick="window.closeHeaderModal()" class='header-menu-overlay'></div>
              <!-- <div class ="navclass"> -->
                 <ul>
-                    <li><a href ="{config.relative_path}/categories"> Categories</a> </li>
-                    <li><a href ="{config.relative_path}/recent"> Recent</a> </li>
-                    <li><a href ="{config.relative_path}/tags"> Tags</a> </li>
-                    <li><a href ="{config.relative_path}/popular"> Popular</a> </li>
+                    <li><a onclick="window.closeHeaderModal()" href="{config.relative_path}/categories"> Categories</a> </li>
+                    <li><a onclick="window.closeHeaderModal()" href="{config.relative_path}/recent"> Recent</a> </li>
+                    <li><a onclick="window.closeHeaderModal()" href="{config.relative_path}/tags"> Tags</a> </li>
+                    <li><a onclick="window.closeHeaderModal()" href="{config.relative_path}/popular"> Popular</a> </li>
 						<!-- IF config.loggedIn -->
 							<li id="user_label" class="dropdown">
 								<label for="user-control-list-check" class="dropdown-toggle" data-toggle="dropdown" id="user_dropdown" title="[[global:header.profile]]" role="button">
@@ -63,39 +75,39 @@
 								<input type="checkbox" class="hidden" id="user-control-list-check" aria-hidden="true">
 								<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
 									<li>
-										<a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
+										<a onclick="window.closeHeaderModal()" component="header/profilelink" href="{relative_path}/user/{user.userslug}">
 											<i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
 										</a>
 									</li>
 									<li role="presentation" class="divider"></li>
 									<li>
-										<a href="#" class="user-status" data-status="online">
+										<a onclick="window.closeHeaderModal()" href="#" class="user-status" data-status="online">
 											<i class="fa fa-fw fa-circle status online"></i><span <!-- IF user.online -->class="bold"<!-- ENDIF user.online -->> [[global:online]]</span>
 										</a>
 									</li>
 									<li>
-										<a href="#" class="user-status" data-status="away">
+										<a onclick="window.closeHeaderModal()" href="#" class="user-status" data-status="away">
 											<i class="fa fa-fw fa-circle status away"></i><span <!-- IF user.away -->class="bold"<!-- ENDIF user.away -->> [[global:away]]</span>
 										</a>
 									</li>
 									<li>
-										<a href="#" class="user-status" data-status="dnd">
+										<a onclick="window.closeHeaderModal()" href="#" class="user-status" data-status="dnd">
 											<i class="fa fa-fw fa-circle status dnd"></i><span <!-- IF user.dnd -->class="bold"<!-- ENDIF user.dnd -->> [[global:dnd]]</span>
 										</a>
 									</li>
 									<li>
-										<a href="#" class="user-status" data-status="offline">
+										<a onclick="window.closeHeaderModal()" href="#" class="user-status" data-status="offline">
 											<i class="fa fa-fw fa-circle status offline"></i><span <!-- IF user.offline -->class="bold"<!-- ENDIF user.offline -->> [[global:invisible]]</span>
 										</a>
 									</li>
 									<li role="presentation" class="divider"></li>
 									<li>
-										<a component="header/profilelink/edit" href="{relative_path}/user/{user.userslug}/edit">
+										<a component="header/profilelink/edit" onclick="window.closeHeaderModal()" href="{relative_path}/user/{user.userslug}/edit">
 											<i class="fa fa-fw fa-edit"></i> <span>[[user:edit-profile]]</span>
 										</a>
 									</li>
 									<li>
-										<a component="header/profilelink/settings" href="{relative_path}/user/{user.userslug}/settings">
+										<a component="header/profilelink/settings" onclick="window.closeHeaderModal()" href="{relative_path}/user/{user.userslug}/settings">
 											<i class="fa fa-fw fa-gear"></i> <span>[[user:settings]]</span>
 										</a>
 									</li>
@@ -103,17 +115,17 @@
 									<li role="presentation" class="divider"></li>
 									<li class="dropdown-header">[[pages:moderator-tools]]</li>
 									<li>
-										<a href="{relative_path}/flags">
+										<a onclick="window.closeHeaderModal()" href="{relative_path}/flags">
 											<i class="fa fa-fw fa-flag"></i> <span>[[pages:flagged-content]]</span>
 										</a>
 									</li>
 									<li>
-										<a href="{relative_path}/post-queue">
+										<a onclick="window.closeHeaderModal()" href="{relative_path}/post-queue">
 											<i class="fa fa-fw fa-list-alt"></i> <span>[[pages:post-queue]]</span>
 										</a>
 									</li>
 									<li>
-										<a href="{relative_path}/ip-blacklist">
+										<a onclick="window.closeHeaderModal()" href="{relative_path}/ip-blacklist">
 											<i class="fa fa-fw fa-ban"></i> <span>[[pages:ip-blacklist]]</span>
 										</a>
 									</li>
@@ -134,13 +146,13 @@
 						<!-- ELSE -->
 							<!-- IF allowRegistration -->
 							<li>
-								<a href="{relative_path}/register">
+								<a onclick="window.closeHeaderModal()" href="{relative_path}/register">
 									<div class="nbtn">Register</div>
 								</a>
 							</li>
 							<!-- ENDIF allowRegistration -->
 							<li>
-								<a href="{relative_path}/login">
+								<a onclick="window.closeHeaderModal()" href="{relative_path}/login">
 									<div class="nbtn">Login</div>
 								</a>
 							</li>
