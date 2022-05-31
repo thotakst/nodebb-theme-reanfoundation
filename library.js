@@ -8,44 +8,6 @@ const library = module.exports;
 
 var benchpress = require.main.require('benchpressjs');
 
-// library.addColumnOne = async function () {
-// 	Benchpress.registerHelper('addOne', function (num) {
-// 		console.log("Helper is registered");
-// 		return num % 2 !== 0;
-// 	});
-// }
-
-library.addColumnOne =  async function (params) {
-	app = params.app;
-	const middleware = params.middleware;
-	benchpress.registerHelper('addOne', function(num){
-		// custom code
-		num = parseInt(num);
-        return num % 2 !== 0;
-	});
-};
-
-library.checkHomePage = async function (url) {
-	if (url == " ") {
-		return true;
-	} else {
-		return false;
-	}
-}
-
-library.addColumnTwo = async function (params) {
-	app = params.app;
-	const middleware = params.middleware;
-	benchpress.registerHelper('addTwo', function(num){
-		return false;//num % 2 === 0;
-	});
-}
-
-// library.addColumnTwo = async function () {
-// 	Benchpress.registerHelper('addTwo', function (num) {
-// 		return false;
-// 	});
-// }
 
 library.init = async function (params) {
 	const { router, middleware } = params;
