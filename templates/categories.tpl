@@ -60,7 +60,7 @@
                   </div>
                   <!-- plane image -->
                   <div class="plane">
-                      <img src="img/plane.png" alt="logo">
+                      <img src="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/plane.png" alt="logo">
                   </div>
               </div>
   
