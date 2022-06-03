@@ -6,9 +6,9 @@
 
                     <div class="cardtext">
 						<!-- IF ../link -->
-						<a href="{../link}" itemprop="url">
+						<a href="{../link}" itemprop="url"></a>
 						<!-- ELSE -->
-						<a href="{config.relative_path}/category/{../slug}" itemprop="url">
+						<a href="{config.relative_path}/category/{../slug}" itemprop="url"></a>
 						<!-- ENDIF ../link -->
                         <p>{../name}</p>
                     </div>

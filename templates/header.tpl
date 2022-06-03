@@ -38,14 +38,14 @@
 	    <div class="upperh">
         <div class="upperh1">
             <p>DOWNLOAD OUR APP </p> 
-            <a href ="#"> <i class="fa fa-play" ></i></a>  
-            <a href="#"> <i class="fa fa-apple"  ></i>  </a> 
+            <a href ="https://play.google.com/store/apps/details?id=org.reanfoundation.patient"> <i class="fa fa-play" ></i></a>  
+            <a href="https://apps.apple.com/in/app/rean-care/id1567923095"> <i class="fa fa-apple"  ></i>  </a>
         </div>
         
         <div class="upperh2">
             <p> CHAT WITH HEALTHGURU </p>
-            <a href="#"><i class="fa fa-whatsapp"  ></i>  </a>
-            <a href="#"><i class="fa fa-telegram" ></i> </a>
+            <a href="https://api.whatsapp.com/send/?phone=15712152682&text=Hey&app_absent=0"><i class="fa fa-whatsapp"  ></i>  </a>
+            <a href="https://t.me/reancovidbot"><i class="fa fa-telegram" ></i> </a>
         </div>
                       
     </div>
