@@ -13,10 +13,8 @@
 		<h1> REAN Healthforum</h1>
 	</div>
 	<div class="s1para">
-		<p> Lorem ipsum dolor sit amet, mollis enim, a eleifend urna. Praesent nec tristique diam. Quisque sed turpis volutpat, elementum mi at, dapibus nisl. Maecenas nunc eros, pellentesque eu tincidunt vitae, vehicula non lacus. Nullam et</p>
+		<p> Find answers to all your healthcare questions. Join our discussions on general health, medical technology, managing chronic conditions, and maintaining wellness. Gain useful health insights, find the right healthcare resources, and seek advice from health experts!</p>
 	</div>
-	
-	<a href="#"><div class="s1btn">More Details </div>  </a>
 	
 </div>
 <!--right part-->
