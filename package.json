@@ -2,7 +2,7 @@
   "name": "nodebb-theme-reanfoundation",
   "version": "1.0.0",
   "nbbpm": {
-    "compatibility": "^1.18.0"
+    "compatibility": "^2.2.0"
   },
   "description": "Rean Foundation Custom Theme theme for NodeBB",
   "main": "library.js",
