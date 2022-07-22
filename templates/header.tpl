@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="{function.localeToHTML, userLang, defaultLang}" {{{if languageDirection}}}data-dir="{languageDirection}" style="direction: {languageDirection};" {{{end}}} >
 <head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TD4R57M');</script>
+	<!-- End Google Tag Manager -->
 	<title>{browserTitle}</title>
 	{{{each metaTags}}}{function.buildMetaTag}{{{end}}}
 	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client{{{if bootswatchSkin}}}-{bootswatchSkin}{{{end}}}.css?{config.cache-buster}" />
@@ -34,6 +41,11 @@
 </head>
 
 <body class="{bodyClass} skin-{{{if bootswatchSkin}}}{bootswatchSkin}{{{else}}}noskin{{{end}}}">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD4R57M"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
 
 	    <div class="upperh">
         <div class="upperh1">
@@ -52,7 +64,9 @@
         <header>
         <div class="lowerh">
             <div class="logo">
-                <img src ="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/Rlogo.png" alt="Logo">
+                <a class="logo" href="{config.relative_path}/">
+					<img src ="{config.relative_path}/plugins/nodebb-theme-reanfoundation/images/Rlogo.png" alt="Logo">
+				</a>
             </div>
             <nav>
              <input type="checkbox" id="check">

@@ -8,8 +8,7 @@
 						<!-- IF ../link -->
 						<a href="{../link}" itemprop="url"></a>
 						<!-- ELSE -->
-						<a href="{config.relative_path}/category/{../slug}" itemprop="url"></a>
+						<a href="{config.relative_path}/category/{../slug}" itemprop="url"><p>{../name}</p></a>
 						<!-- ENDIF ../link -->
-                        <p>{../name}</p>
                     </div>
 </div>
