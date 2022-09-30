@@ -39,6 +39,7 @@
     "eslint": "^7.32.0",
     "eslint-config-nodebb": "^0.0.2",
     "eslint-plugin-import": "^2.24.2",
-    "benchpressjs": "2.4.3"
+    "benchpressjs": "2.4.3",
+    "nodebb-theme-persona": "0.7.1"
   }
 }
