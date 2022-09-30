@@ -15,7 +15,10 @@
 		"./helpers.js"
 	],
 	"modules": {
-		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
+		"pulling.js": "node_modules/pulling/build/pulling-drawer.js",
+		"../admin/plugins/persona.js": "public/admin.js",
+		"persona/quickreply.js": "public/modules/quickreply.js",
+		"../client/account/theme.js": "public/settings.js"
 	},
 	"acpScripts": [
 		"public/admin.js"
