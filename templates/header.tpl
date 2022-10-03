@@ -46,8 +46,23 @@
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
+		<div id="mainHeader" class="mainHeader">
+			<script>
+				window.onscroll = function() {
+					var header = document.getElementById("mainHeader");
 
-	    <div class="upperh">
+					var scroll = $(window).scrollTop();
+
+					// Get the offset position of the navbar
+					// var sticky = header.offsetTop;
+					if (scroll >= 5 ) {
+						header.classList.add("sticky");
+					} else {
+						header.classList.remove("sticky");
+					}
+				}
+			</script>
+	    <div class="upperh" id="upperh">
         <div class="upperh1">
             <p>DOWNLOAD OUR APP </p> 
             <a href ="https://play.google.com/store/apps/details?id=org.reanfoundation.patient"> <i class="fa fa-play" ></i></a>  
@@ -179,6 +194,7 @@
             </nav>
         
     </header>
+	</div>
 
 		<main id="panel" class="slideout-panel">
 
